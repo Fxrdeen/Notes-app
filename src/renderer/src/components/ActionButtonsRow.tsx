@@ -1,12 +1,11 @@
-import React, { ComponentProps } from 'react'
-import NewNoteButton from './Button/NewNoteButton'
-import DeleteNotebutton from './Button/DeleteNotebutton'
+import { ComponentProps } from 'react'
+import { DeleteNoteButton, NewNoteButton } from './Button'
 
 const ActionButtonsRow = ({ ...props }: ComponentProps<'div'>) => {
   return (
     <div {...props}>
       <NewNoteButton />
-      <DeleteNotebutton />
+      <DeleteNoteButton />
     </div>
   )
 }
